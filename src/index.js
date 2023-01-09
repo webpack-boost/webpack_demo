@@ -1,7 +1,11 @@
-const fn = x => x + 1
+/**
+ * 入口文件
+ */
+import './assets/css/index.css'
 
-fn()
+// 引入图片
+import img from './assets/images/1.png'
 
-function a() {}
+document.body.insertAdjacentHTML('beforeend', '<h1>css-loader测试</h1>')
 
-a()
+document.body.insertAdjacentHTML('beforeend', `<img src=${img} />`)
