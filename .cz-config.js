@@ -2,7 +2,7 @@ module.exports = {
   types: [
     {
       value: '✨feat',
-      name: '✨feat: 新功能'
+      name: '✨feat: 增加新功能'
     },
     {
       value: '🐛fix',
@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       value: '🎉init',
-      name: '🎉init: 初始化'
+      name: '🎉init: 项目初始化'
     },
     {
       value: '📝docs',
@@ -18,11 +18,11 @@ module.exports = {
     },
     {
       value: '💄style',
-      name: '💄style: 代码的样式美化'
+      name: '💄style: 样式更改不影响逻辑'
     },
     {
       value: '♻️refactor',
-      name: '♻️refactor: 重构'
+      name: '♻️refactor: 功能/代码重构'
     },
     {
       value: '⚡️perf',
@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       value: '⏪️revert',
-      name: '⏪️revert: 回退'
+      name: '⏪️revert: 版本回退'
     },
     {
       value: '📦️build',
@@ -46,7 +46,7 @@ module.exports = {
     },
     {
       value: '💚ci',
-      name: '💚ci: CI环境相关代码变更'
+      name: '💚ci: CI部署/代码变更'
     }
   ],
   messages: {
@@ -56,9 +56,9 @@ module.exports = {
     body: '请输入详细描述(可选)',
     breaking: '列出任何BREAKING CHANGES(破坏性修改)(可选)',
     footer: '请输入要关闭的issue(可选)',
-    confirmCommit: '确定提交此说明吗？'
+    confirmCommit: '确定提交此说明吗？(y/n)'
   },
-  allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix'], // 当提交类型为feat、fix时才有破坏性修改选项
-  subjectLimit: 72
+  subjectLimit: 72,
+  skip: ['footer']
 }
