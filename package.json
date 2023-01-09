@@ -43,7 +43,10 @@
     "@types/node": "^18.11.18"
   },
   "lint-staged": {
-    "src/*.{js, ts}": "pnpm pre-commit"
+    "src/*.{js, ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "config": {
     "commitizen": {
