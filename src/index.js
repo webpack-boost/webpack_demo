@@ -5,5 +5,3 @@ fn()
 function a() {}
 
 a()
-
-const fn = 'xxxx'
